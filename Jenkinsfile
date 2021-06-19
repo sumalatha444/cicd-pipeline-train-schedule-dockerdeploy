@@ -38,10 +38,6 @@ pipeline {
     when {
         branch 'master'
     }
-    stage ('DeployToProduction') {
-    when {
-        branch 'master'
-    }
     steps {
         input 'Deploy to Production'
         milestone(1)
